@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos de estructuras de datos</title>
+</head>
+<body>
+   
+    <link rel="stylesheet" href="style.css">
+<h1>Estructuras de Datos</h1>
+<ol>
+    <li id="titulo">Arrays (Arreglos) </li>
+    <p id="p">Definición y características:</p>
+    <p id="p">Arrays (Arreglos) es una estructura de datos que almacena una colección de elementos del
+        mismo tipo en una secuencia contigua en memoria. Cada elemento del arreglo puede ser
+        accedido mediante un índice, que generalmente comienza en 0.
+        </p>
+    <p id="preguntas">Características principales de los arrays</p>
+    <ul  id="p">
+        <li>Tiene un nombre de variable único que representa a cada elemento dentro de él y
+            estos elementos son diferenciados por un índice.
+            </li><br>
+        <li>Los elementos dentro del array son guardados en posiciones de memoria de forma
+            continua.</li><br>
+        <li>Se puede acceder a cada elemento individual del array de manera directa o
+            aleatoria.
+            </li>
+    </ul>
+    <p id="preguntas">Operaciones básicas: acceso, inserción, eliminación </p>
+    <p id="preguntas">Acceso:
+    </p>
+    <ul id="p">
+        <li>Puedes acceder a un elemento en el arreglo utilizando su índice. Por ejemplo, en un
+            arreglo A con 5 elementos, A[2] te dará el tercer elemento del arreglo</li><br>
+        <li>En pseudo-código: elemento = A[indice]</li><br>
+        <img src="Acceso array.png" alt= "acceso de arrays" title="acceso de arrays" class="img">
+    </ul>
+    <p id="preguntas">Inserción:</p>
+    <ul id="p">
+        
+        <li>Insertar un elemento en un arreglo puede ser un poco complicado si el tamaño es
+            fijo. Si el tamaño del arreglo es dinámico, puedes agregar elementos al final.
+            </li><br>
+        <li>En un arreglo de tamaño fijo, la inserción de un nuevo elemento a menudo implica
+            mover elementos para hacer espacio, lo cual puede ser costoso.</li>
+        <li>Ejemplo en pseudo-código: Para insertar en la posición i, podrías mover todos los
+            elementos desde i hasta el final una posición hacia adelante y luego colocar el nuevo
+            elemento en i.</li><br>
+            <img src="insercion array.png" alt= "Inserción de arrays" title="Inserción de arrays" class="img">
+    </ul>
+
+    <p id="preguntas">Eliminación:</p>
+    <ul id="p">
+        
+        <li>La eliminación de un elemento también puede ser costosa en un arreglo de tamaño
+            fijo, ya que a menudo implica mover todos los elementos posteriores al elemento
+            eliminado.
+            </li><br>
+    
+        <li>Ejemplo en pseudo-código: Para eliminar el elemento en la posición i, debes mover
+            todos los elementos desde i+1 hasta el final una posición hacia atrás para llenar el
+            hueco.</li><br>
+            <img src="Eliminacion de array.png" alt="eliminacion de arrays" title="eliminacion de arrays" class="img">
+    </ul>
+    
+    <p id="p">Arrays multidimensionales</p>
+    <p id="p">Un array multidimensional es una estructura de datos que contiene otros arrays como
+        elementos. Puedes imaginarlo como una matriz en la que cada celda puede contener otro
+        array, permitiendo la creación de estructuras de datos complejas y jerárquicas.</p>  
+
+<li id="titulo">Listas Enlazadas</li>
+<p id="p">Una lista enlazada es una estructura de datos compuesta por nodos. Cada nodo contiene un
+    valor y una referencia (o enlace) al siguiente nodo en la secuencia. Las listas enlazadas
+    permiten una inserción y eliminación de elementos eficientes, especialmente en
+    comparación con los arrays, donde estos procesos pueden ser más costosos.
+    </p>
+<p id="preguntas">Listas enlazadas simples </p>
+<ul id="p">
+<li>Cada nodo contiene un valor y una referencia al siguiente nodo.</li>
+<li>Permite recorrer la lista en una sola dirección, desde el comienzo hasta el final.</li>
+<img src="lista enlazada.png" alt="lista enlazada" title="lista enlazada" class="img">
+</ul>
+
+<p id="preguntas">Listas doblemente enlazadas</p>
+<ul id="p">
+<li>Cada nodo contiene un valor y una referencia al siguiente nodo.</li>
+<li>Permite recorrer la lista en una sola dirección, desde el comienzo hasta el final.</li>
+<img src="doblemente enlazadas.png" alt="doblemente enlazadas" title="doblemente enlazadas" class="img">
+</ul>
+
+<p id="preguntas">Listas circularmente enlazadas</p>
+<p id="p">Una lista enlazada circular es una variación de la lista enlazada. Es una lista enlazada cuyos
+    nodos están conectados de tal manera que forma un círculo, también pueden ser vistas
+    como listas sin comienzo ni fin. En pocas palabras una lista enlazada circular, el primer y el
+    último nodo están unidos juntos.</p>
+<img src="circularmente enlazadas.png"doblemente enlazadas" title="doblemente enlazadas" class="img">
+</ul>
+<p id="preguntas">Operaciones básicas: inserción, eliminación, búsqueda</p>
+
+
+<p id="preguntas">Inserción:</p>
+<ul id="p">
+<li>Al Principio: Se actualiza el puntero de la cabeza de la lista para apuntar al nuevo
+    nodo.</li>
+<li>Al Final: Se encuentra el último nodo y se ajusta su puntero para apuntar al nuevo
+    nodo.</li>
+<li>En Medio: Se ajustan los punteros de los nodos adyacentes al nuevo nodo.</li>
+</ul>
+
+<p id="preguntas">Eliminación:</p>
+<ul id="p">
+<li>Del Principio: Se actualiza el puntero de la cabeza de la lista para que apunte al
+    siguiente nodo.</li>
+<li>Del Final: Se encuentra el penúltimo nodo y se ajusta su puntero para que apunte a
+    null o fin de la lista</li>
+<li>De un Nodo Específico: Se ajustan los punteros de los nodos adyacentes al nodo que
+    se elimina</li>
+</ul>
+
+<p id="preguntas">Búsqueda:
+</p>
+<ul id="p">
+<li>Se recorre la lista desde la cabeza hasta encontrar el nodo que contiene el valor
+    deseado.</li><br>
+</ul>
+
+<li id="titulo">Pilars (Stacks) </li>
+    <p id="p">Las pilas (stacks) son una estructura de datos donde tenemos una colección de elementos, y
+    sólo podemos hacer dos cosas:</p>
+    <ul id="p">
+        <li>Añadir un elemento al final de la pila.</li>
+        <li>Sacar el último elemento de la pila.</li>
+    </ul>
+
+    <p id="preguntas">Principio LIFO (Last In, First Out) </p>
+        <p id="p">En una pila, el último elemento insertado es el primero en ser retirado. Puedes pensar en
+            una pila como una pila de platos: puedes agregar un plato en la parte superior y solo puedes
+            retirar el plato de la parte superior.</p>
+
+    <p id="preguntas">Operaciones: push, pop, peek </p>
+            <ul id="p">
+                <li>Push: Agrega un elemento en la parte superior de la pila.</li>
+                <li>Pop: Elimina el elemento en la parte superior de la pila y lo devuelve.</li>
+                <li>Peek (o Top): Devuelve el elemento en la parte superior de la pila sin eliminarlo</li>
+            <p id="p">Implementación usando arrays o listas enlazadas</p>
+            <img src="Implementacion de arrays.png" alt="Implementacion de arrays" title="Implementacion de arrays" class="img">
+            </ul><br>
+    <li id="titulo">Colas (Queues) - Principio FIFO (First In, First Out) </li>
+    <p id="p">Una cola FIFO garantiza que los artículos se procesan en el orden exacto en que se reciben.
+        Imagínesela como la cola de una cafetería, donde el primer cliente en llegar es el primero en
+        ser atendido.
+        </p>
+    <p id="preguntas">Colas simples </p>
+    <p id="p">Las colas simples son la forma más básica de una estructura de cola. En este tipo, los
+        elementos se añaden al final y se retiran del frente siguiendo el principio FIFO (First In, First
+        Out).</p>
+
+    <p id="preguntas">Colas circulares </p>
+    <p id="p">Las colas circulares son una variación de las colas simples que usan un arreglo de tamaño
+        fijo para almacenar elementos. Cuando el final del arreglo es alcanzado, el siguiente
+        elemento se coloca al inicio del arreglo, formando un "circular buffer" o buffer circular</p>
+
+    <p id="preguntas">Colas de prioridad </p>
+    <p id="p">En una cola de prioridad, cada elemento tiene una prioridad asociada. Los elementos con
+        mayor prioridad se extraen antes que los elementos con menor prioridad,
+        independientemente de su orden de entrada.
+        </p>
+    <p id="p">En una cola de prioridad, cada elemento tiene una prioridad asociada. Los elementos con
+        mayor prioridad se extraen antes que los elementos con menor prioridad,
+        independientemente de su orden de entrada.
+        </p>
+    <p id="preguntas">Operaciones:</p>
+    <ul id="p">
+        <li>Enqueue(item): Añade un elemento al final de la cola.</li>
+        <li>Dequeue(): Retira y devuelve el elemento en el frente de la cola.</li>
+        <li>Front (): Devuelve el elemento en el frente de la cola sin retirarlo.</li>
+    </ul><br>
+
+    <li id="titulo">Árboles </li>
+    <p id="p">Se les llama estructuras dinámicas, porque las mismas pueden cambiar tanto de forma
+        como de tamaño durante la ejecución del programa. Y estructuras no lineales porque cada
+        elemento del árbol puede tener más de un sucesor</p>
+
+    <p id="preguntas">Árbol binario </p>
+
+    <p id="p">Un árbol binario es una estructura de datos en la que cada nodo tiene como máximo dos
+        hijos: un hijo izquierdo y un hijo derecho.</p>
+        <img src="arbol_binario.png" alt="Arbol binario" title="Arbol binario" width="350" class="img">
+
+        <p id="preguntas">Árbol de búsqueda binaria (BST)</p>
+
+        <p id="p">Un árbol de búsqueda binaria es un árbol binario en el que, para cada nodo:</p>
+        <ul id="p">
+            <li>Los valores de todos los nodos en su subárbol izquierdo son menores que el valor del
+                nodo.</li>
+            <li>Los valores de todos los nodos en su subárbol derecho son mayores que el valor del
+                nodo.</li>
+                <img src="arbol-binario-de-busqueda.png" alt="arbol-binario-de-busqueda" title="arbol-binario-de-busqueda" class="img">
+        </ul>
+
+        <p id="preguntas">Árbol AVL (autobalanceado)</p>
+
+        <p id="p">Un árbol AVL es un tipo de árbol binario de búsqueda auto-balanceado. La diferencia de
+            altura entre los subárboles izquierdo y derecho de cualquier nodo no puede ser más de uno.
+            Esto asegura que el árbol se mantenga equilibrado, garantizando tiempos de operación
+            logarítmicos para las operaciones de búsqueda, inserción y eliminación.</p>
+            <img src="Árbol AVL(autobalanceado).png" alt="Árbol AVL(autobalanceado)" title="Árbol AVL(autobalanceado)" class="img">
+    
+        <p id="preguntas">Árbol B - Árbol N-ario </p>
+        <p id="p">Un árbol N-ario es una estructura de datos en la que cada nodo puede tener hasta N hijos.
+                Estos árboles son útiles en aplicaciones como sistemas de archivos y estructuras jerárquicas.</p>
+                <img src="árbol N-ario.png" alt="árbol N-ario" title="árbol N-ario" width="400" class="img">
+        </ul>
+        <p id="preguntas">Operaciones Básicas:
+        </p>
+            <ul id="p">
+                <li>Inserción: Añadir un nuevo nodo al árbol.</li>
+                <li>Eliminación: Eliminar un nodo del árbol.</li>
+                <li>Recorrido: Recorrer el árbol en diferentes órdenes (inorden, preorden, postorden).</li>
+            </ul><br>
+
+    <li id="titulo">Grafos</li>
+
+    <p id="p">Un grafo es una estructura matemática que consta de un conjunto de nodos (o vértices) y
+        un conjunto de aristas (o arcos) que conectan pares de nodos. Los grafos se utilizan para
+        modelar relaciones y conexiones en diversos contextos, como redes sociales, rutas de
+        transporte y muchos más.</p>
+    
+    <p id="p">Definición y representación (matriz de adyacencia, lista de adyacencia)</p>
+    <p id="p">Hay dos formas comunes de representar un grafo:</p>
+
+    <p id="p">Matriz de adyacencia: El grafo está representado por una matriz cuadrada M de tamaño,
+        donde es el número de vértices. Si hay una arista entre un vértice x y un vértice y, entonces
+        el elemento es 1, de lo contrario, es 0.</p>
+
+    <p id="p">Lista de adyacencia: Cada vértice tiene una lista de vértices los cuales son adyacentes a él.
+        Esto causa redundancia en un grafo no dirigido (ya que A existe en la lista de adyacencia de
+        B y viceversa), pero las búsquedas son más rápidas, al costo de almacenamiento extra.</p>
+    
+    <p id="preguntas">Grafos dirigidos y no dirigidos </p>
+    <p id="p">Un grafo dirigido o digrafo es un tipo de grafo en el cual las aristas tienen un sentido
+        definido, a diferencia del grafo no dirigido, en el cual las aristas son relaciones simétricas y
+        no apuntan en ningún sentido</p>
+        <img src="Grafos dirigidos y no dirigidos.png" alt="Grafos dirigidos y no dirigidos" title="Grafos dirigidos y no dirigidos" class="img">
+
+    <p id="preguntas">Grafos no ponderados</p>
+    <p id="p">En un grafo no ponderado, las aristas no tienen un valor o peso asociado. La única
+        información que se tiene sobre las aristas es si están presentes o no, es decir, simplemente
+        indican la existencia de una conexión entre dos nodos</p>
+
+    <p id="p">Algoritmos básicos: BFS (Breadth-First Search), DFS (Depth-First Search)son dos algoritmos
+fundamentales para recorrer o buscar en grafos. Ambos tienen diferentes enfoques y
+aplicaciones dependiendo de la estructura del grafo y el problema en cuestión.</p>
+<img src="bfs-vs-dfs.png" alt="bfs-vs-dfs" title="bfs-vs-dfs" class="img" width="700">
+
+<p id="p">Breadth-First Search (BFS) es un algoritmo que explora los nodos de un grafo nivel por nivel
+    a partir de un nodo inicial. Utiliza una cola para llevar un registro de los nodos que deben
+    ser explorados. Es útil para encontrar el camino más corto en términos de número de aristas
+    en un grafo no ponderado.</p>
+
+<p id="preguntas">Características principales:</p>
+<ul id="p">
+    <li>Estrategia de Exploración: Explora todos los nodos al nivel actual antes de pasar al
+        siguiente nivel.</li>
+    <li>Estructura de Datos: Utiliza una cola (FIFO) para llevar un registro de los nodos
+        pendientes de explorar.</li>
+    <li>Aplicaciones: Encuentra el camino más corto en grafos no ponderados, verifica la
+        conectividad del grafo, y puede ser usado para realizar un recorrido en niveles.
+        </li>
+</ul>
+
+<p id="p">Depth-First Search (DFS) es un algoritmo que explora los nodos de un grafo a lo largo de
+    una rama antes de retroceder y explorar otras ramas. Utiliza una pila (ya sea explícita o
+    implícita mediante recursión) para llevar un registro de los nodos que deben ser explorados.</p>
+    
+<p id="preguntas">Características principales:</p>
+<ul id="p">
+    <li>Estrategia de Exploración: Explora un camino completo antes de retroceder y
+        explorar otros caminos.</li>
+    <li>Estructura de Datos: Utiliza una pila (LIFO) o recursión para llevar un registro de los
+        nodos pendientes de explorar.</li>
+    <li>Aplicaciones: Detecta ciclos en un grafo, realiza recorridos completos, y puede ser
+        utilizado para la búsqueda en grafos dirigidos y no dirigidos</li><br>
+</ul>
+
+<li id="titulo">Tablas Hash
+</li>
+<p id="preguntas">Concepto de función hash</p>
+<p id="p">Las tablas hash son una estructura de datos que proporciona una forma eficiente de
+    almacenar y buscar datos mediante el uso de una función de hash. Son ampliamente
+    utilizadas en programación y en sistemas de bases de datos debido a su capacidad para
+    realizar operaciones de inserción, eliminación y búsqueda de manera rápida, generalmente
+    en tiempo constante promedio.</p>
+
+<p id="preguntas">Manejo de Colisiones</p>
+<p id="p">Las colisiones ocurren cuando dos o más claves diferentes se mapean al mismo índice en la
+    tabla hash. Existen dos métodos comunes para manejar colisiones:</p>
+<ol>
+    <li id="preguntas">Encadenamiento (Chaining):</li>
+    <ul id="p"><br>
+        <li >Descripción: Cada índice de la tabla hash contiene una lista (o cualquier otra
+            estructura de datos) que almacena todos los elementos que se mapean a ese
+            índice. Cuando ocurre una colisión, el nuevo elemento se agrega a la lista
+            existente en ese índice.</li><br>
+        <li>Ventajas: La tabla puede manejar un número arbitrario de elementos, incluso si
+            hay muchas colisiones, y es relativamente simple de implementar.
+            </li><br>
+        <li>Desventajas: La eficiencia puede disminuir si las listas en algunos índices se
+            vuelven largas.</li><br>
+    </ul>
+    <li id="preguntas"> Dirección Abierta (Open Addressing):</li><br>
+    <ul id="p">
+        <li>Descripción: En lugar de usar listas para manejar colisiones, la dirección abierta busca otro
+            índice disponible en la tabla para almacenar el elemento. Este método usa una estrategia
+            para encontrar el siguiente índice libre cuando ocurre una colisión.</li>
+    </ul>
+</ol>
+<p id="preguntas">Operaciones Básicas en una Tabla Hash</p>
+
+<p id="preguntas">Inserción:</p>
+<ul id="p">
+    <li id="preguntas">Encadenamiento:</li>
+    <ol >
+        <li>Calcula el índice utilizando la función hash.</li>
+        <li>Agrega el elemento a la lista en el índice correspondiente.
+        </li><br>
+    </ol>
+    <li id="preguntas">Dirección Abierta:</li>
+    <ol >
+        <li>Calcula el índice utilizando la función hash.</li>
+        <li>Si el índice está ocupado, busca un índice libre utilizando el método de manejo
+            de colisiones.</li>
+        <li>Inserta el elemento en el índice libre encontrado.</li>
+    </ol>
+</ul>
+
+<p id="preguntas">Búsqueda:
+</p>
+<ul id="p">
+    <li id="preguntas">Encadenamiento:</li>
+    <ol >
+        <li>Calcula el índice utilizando la función hash.</li>
+        <li>Recorre la lista en el índice para encontrar el elemento.
+        </li>
+    </ol><br>
+    <li id="preguntas">Dirección Abierta:</li>
+    <ol>
+        <li>Calcula el índice utilizando la función hash.</li>
+        <li>Si el índice no contiene el elemento, busca otros índices utilizando el método de
+            manejo de colisiones.</li>
+        <li>Si se encuentra el elemento, devuélvelo; si el índice revisado está vacío, el
+            elemento no está en la tabla.</li>
+    </ol>
+</ul>
+
+<p id="preguntas">Eliminación:
+</p>
+<ul id="p">
+    <li id="preguntas">Encadenamiento:</li>
+    <ol>
+        <li>Calcula el índice utilizando la función hash.</li>
+        <li>Recorre la lista en el índice para encontrar y eliminar el elemento.
+        </li>
+    </ol><br>
+    <li id="preguntas">Dirección Abierta:</li>
+    <ol>
+        <li>Calcula el índice utilizando la función hash.</li>
+        <li>Si el índice contiene el elemento, elimínalo y marca el espacio como disponible.</li>
+        <li>Para asegurar que las búsquedas posteriores no se vean afectadas, pueden ser
+            necesarias técnicas adicionales como la reubicación de elementos.</li>
+    </ol>
+</ul>
+        
+
+
+
+</ol>
+
+</body>
+<footer class="footer">
+    <di>
+      <a href="index.html" class="btn">1</a>
+      <a href="pagina2.html" class="btn">2</a>
+      
+    </di>
+  </footer>
+</html>

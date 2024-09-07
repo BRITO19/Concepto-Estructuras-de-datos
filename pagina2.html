@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina2</title>
+    
+</head>
+<body>
+      <link rel="stylesheet" href="style.css">
+      <h1>Estructuras de Datos (parte Dos)</h1>
+      <ol>
+    <li id="titulo">Algoritmos</li>
+
+    <div id="p">
+      <p id="preguntas">Algoritmos de Ordenación</p>
+      <p>Los algoritmos de ordenamiento nos permiten, como su nombre lo dice, ordenar
+        información de una manera especial basándonos en un criterio de ordenamiento.</p>
+    
+      <p id="preguntas">Ordenación por burbuja (Bubble Sort) </p>
+      <p>El ordenamiento de burbuja (Bubble Sort en inglés) es un sencillo algoritmo de
+        ordenamiento. Funciona revisando cada elemento de la lista que va a ser ordenada con el
+        siguiente, intercambiándolos de posición si están en el orden equivocado.
+        </p>
+  
+      <p id="preguntas">Ordenación por inserción (Insertion Sort) </p>
+      <p>Insertion Sort (o "Ordenamiento por Inserción") es una técnica de ordenación que
+        construirá la secuencia ordenada de elementos uno a la vez, comparando siempre cada
+        elemento con los elementos ya ordenados a la izquierda e insertándolo en la posición
+        correcta.</p>
+  
+      <p id="preguntas">Ordenación por selección (Selection Sort) </p>
+      <p>Selection Sort o Ordenamiento por Selección, busca el elemento más pequeño en el
+        conjunto de elementos y lo coloca en la posición correcta. Luego, busca el siguiente
+        elemento más pequeño y lo coloca en la siguiente posición correcta. Repite este proceso
+        hasta que todos los elementos estén ordenados.</p>
+  
+      <p id="preguntas">Ordenación rápida (Quick Sort)</p>
+      <p>QuickSort es un algoritmo basado en el principio “divide y vencerás”. Es una de los
+        algoritmos más rápidos conocidos para ordenar. Este método es recursivo, aunque existen
+        versiones con formas iterativas que lo hacen aún más rápido.</p>
+  
+      <p id="preguntas">Ordenación por fusión (Merge Sort) </p>
+      <p>El algoritmo de ordenación Merge Sort es un método eficiente, general y comparativo para
+        ordenar listas o arrays. Es un ejemplo clásico de un algoritmo "divide y vencerás". Merge
+        Sort divide el conjunto de datos en mitades más pequeñas, las ordena y luego las fusiona de
+        nuevo en una sola lista ordenada.</p>
+  
+      <p id="preguntas">Ordenación por montículo (Heap Sort)</p>
+      <p>La ordenación por montículos utiliza la propiedad de la raíz para ordenar el arreglo. Una vez
+        que el arreglo cumpla las propiedades del montículo, quitamos la raíz y la colocamos al final
+        del arreglo.</p>
+
+    </div>
+   
+
+    <li id="titulo">Algoritmos de Búsqueda</li>
+
+    <div id="p">
+
+      <p>Un algoritmo de búsqueda es un conjunto de instrucciones que están diseñadas para
+        localizar un elemento con ciertas propiedades dentro de una estructura de datos
+        </p>
+  
+      <p id="preguntas">Búsqueda lineal (Linear Search) </p>
+      <p>La búsqueda lineal recorre todos los elementos de una colección uno por uno hasta
+        encontrar el elemento objetivo o llegar al final de la colección. Es el método más simple de
+        búsqueda</p>
+  
+      <p id="preguntas">Búsqueda binaria (Binary Search) </p>
+      <p>La búsqueda binaria se aplica en una colección ordenada. Divide la colección a la mitad
+        repetidamente para encontrar el elemento objetivo. Si el elemento en el medio es el
+        objetivo, se retorna el índice. Si el objetivo es menor o mayor, la búsqueda continua en la
+        mitad correspondiente</p>
+  
+      <p id="preguntas">Búsqueda en profundidad (DFS) en grafos</p>
+      <p>DFS explora un grafo o un árbol comenzando desde un nodo raíz y avanzando hacia los
+        nodos más profundos posibles antes de retroceder. Se utiliza una estructura de pila (puede
+        ser implícita en la recursión) para realizar la búsqueda.</p>
+  
+      <p id="preguntas">Búsqueda en amplitud (BFS) en grafos</p>
+      <p>BFS explora un grafo o un árbol nivel por nivel, comenzando desde un nodo raíz y
+        avanzando hacia los nodos vecinos antes de pasar a los siguientes niveles. Utiliza una
+        estructura de cola para llevar a cabo la búsqueda.</p>
+  
+    </div>
+   
+   <li id="titulo">Algoritmos de Grafos</li>
+   
+   <div id="p">
+
+    <p>son fundamentales en la informática y se utilizan para resolver problemas relacionados con
+      redes, caminos, conexiones y estructuras de datos en forma de grafos.
+      
+      <p id="preguntas">Algoritmo de Dijkstra (camino más corto en grafos ponderados)</p>
+      <p>Encuentra el camino más
+        corto desde un nodo fuente a todos los otros nodos en un grafo ponderado con pesos no
+        negativos.</p>
+  
+      <p id="preguntas">Algoritmo de Bellman-Ford (camino más corto en grafos con pesos negativos)</p>
+      <p>Encuentra el
+        camino más corto desde un nodo fuente a todos los otros nodos en un grafo ponderado,
+        incluso con pesos negativos. Puede detectar ciclos negativos</p>
+      
+      <p id="preguntas">Algoritmo de Floyd-Warshall (camino más corto entre todos los pares)</p>
+      <p> es un algoritmo de
+        análisis sobre grafos para encontrar el camino mínimo en grafos dirigidos ponderados. El
+        algoritmo encuentra el camino entre todos los pares de vértices en una única ejecución.</p>
+  
+      <p id="preguntas">Algoritmo de Kruskal (árbol de expansión mínima)</p>
+      <p>Encuentra el árbol de expansión mínima
+        (MST) en un grafo ponderado utilizando un enfoque basado en conjuntos disjuntos. Es útil
+        para encontrar el conjunto de aristas que conecta todos los nodos con el menor peso total.</p>
+  
+      <p id="preguntas">Algoritmo de Prim (árbol de expansión mínima)</p>
+      <p>El algoritmo de Prim permite encontrar un
+        árbol recubridor mínimo de un grafo. En otras palabras, el algoritmo encuentra un
+        subconjunto de aristas que forman un árbol con todos los vértices, donde el peso total de
+        todas las aristas en el árbol es el mínimo posible.</p>
+   </div>
+   
+
+    <li id="titulo">Algoritmos de Programación Dinámica </li>
+
+    <div id="p">
+      <p id="preguntas">Concepto de programación dinámica</p>
+      <p>La programación dinámica es una técnica de diseño de algoritmos utilizada para resolver
+        problemas complejos que pueden ser descompuestos en subproblemas más simples. La
+        esencia de la programación dinámica radica en almacenar las soluciones de estos
+        subproblemas para evitar la recomputación y, así, optimizar el tiempo de ejecución.
+        </p>
+  
+      <p id="preguntas">Problemas clásicos: mochila, secuencia de Fibonacci, cadena de matrices </p>
+  
+      <p>Problema de la Mochila (Knapsack Problem) Dado un conjunto de objetos, cada uno con un
+        valor y un peso, y una mochila con una capacidad máxima, el objetivo es maximizar el valor
+        total de los objetos que se pueden colocar en la mochila sin exceder la capacidad.</p>
+  
+      <p>La secuencia de Fibonacci es una serie de números en la que cada número es la suma de los
+        dos números anteriores. El objetivo es encontrar el n-ésimo número de la secuencia.</p>
+      
+      <p id="preguntas">Problema de la Cadena de Matrices (Matrix Chain Multiplication)</p>
+      <p>consiste en dada una
+        sucesión de matrices encontrar la manera de multiplicarlas usando el menor número de
+        productos de elementos</p>
+  
+      <p id="preguntas">Técnica de memorización y tabulación</p>
+      
+      <p>Técnica de Memorización (Top-Down) es un enfoque top-down que resuelve el
+        problema de manera recursiva, almacenando los resultados de los subproblemas a
+        medida que se resuelven. Esto evita la necesidad de recalcular soluciones para
+        subproblemas que ya han sido resueltos.</p>
+  
+      <p>Técnica de Tabulación (Bottom-Up) es un enfoque bottom-up que resuelve el problema
+        iterativamente, construyendo una tabla (o matriz) que contiene soluciones a todos los
+        subproblemas. El algoritmo comienza resolviendo los subproblemas más pequeños y usa
+        estas soluciones para construir la solución del problema principal.</p>
+    </div>
+    
+   
+    <li id="titulo">Algoritmos de Divide y Vencerás</li>
+
+    <div id="p">
+      <p id="preguntas">Concepto de divide y vencerás </p>
+      <p>La técnica de Divide y Vencerás es un enfoque fundamental en el diseño de algoritmos. Esta
+        técnica divide un problema en subproblemas más pequeños, resuelve los subproblemas de
+        forma recursiva y luego combina las soluciones de los subproblemas para obtener la
+        solución del problema original.
+        </p>
+  
+      <p id="preguntas">Ejemplos: Merge Sort, Quick Sort, búsqueda binaria</p>
+  
+      <ul>
+        <li>Merge Sort (Ordenación por Mezcla)</li>
+        <p>Es un algoritmo de ordenación que utiliza el
+          enfoque de Divide y Vencerás para ordenar un arreglo dividiéndolo en mitades,
+          ordenando las mitades de forma recursiva y luego combinando las mitades
+          ordenadas</p>
+  
+        <li>Quick Sort (Ordenación Rápida)</li>
+        <p>Es otro algoritmo de ordenación que divide un
+          arreglo en dos subarreglos basados en un pivote, ordena los subarreglos de forma
+          recursiva y combina los resultados para obtener el arreglo ordenado.
+          </li></p>
+  
+        <li>Algoritmo de Búsqueda Binaria</li>
+        <p>Es un algoritmo para encontrar un elemento en un
+          arreglo ordenado. Divide el arreglo en mitades y determina en cuál mitad se
+          encuentra el elemento buscado, repitiendo el proceso hasta encontrar el elemento o
+          determinar que no está presente.</p>
+      </ul>
+
+    </div>
+    
+    <li id="titulo">Complejidad Computacional </li>
+
+    <div id="p">
+      <p>La complejidad computacional se refiere a la cantidad de recursos (como tiempo y memoria)
+        que un algoritmo necesita para ejecutarse a medida que el tamaño de la entrada aumenta.
+        Se suele medir en términos de tiempo (cuánto tarda) y espacio (cuánta memoria usa).</p>
+     
+      <p id="preguntas">Notación Big O </p>
+      <p>La notación Big O es una forma de describir el comportamiento asintótico de un algoritmo,
+        es decir, cómo cambia el tiempo de ejecución o el uso de memoria en función del tamaño
+        de la entrada cuando este tamaño se vuelve muy grande. La notación Big O se centra en el
+        comportamiento dominante y desprecia los factores constantes y los términos menos
+        significativos.</p>
+  
+        <p id="preguntas">Análisis de tiempo y espacio</p>
+        <p id="preguntas">Análisis de Tiempo:</p>
+  
+        <ul>
+          <li>Se refiere al tiempo que tarda un algoritmo en completarse en función del tamaño
+            de la entrada.
+            </li>
+          <li>Se refiere al tiempo que tarda un algoritmo en completarse en función del tamaño
+            de la entrada.
+            </li>
+        </ul>
+  
+        <p id="preguntas">Análisis de Espacio:</p>
+  
+        <ul>
+          <li>Se refiere a la cantidad de memoria que un algoritmo necesita en función del
+            tamaño de la entrada.          
+            </li>
+          <li>Incluye tanto la memoria adicional utilizada (como variables auxiliares) como la
+            memoria necesaria para almacenar los datos de entrada.
+            </li>
+        </ul>
+  
+        <p id="preguntas">Casos promedio, mejor y peor caso
+        </p>
+  
+        <ul>
+          <li>Caso mejor: se refiere a la situación inicial de los datos que genera una ejecución del
+            algoritmo con una menor complejidad computacional.
+                     
+            </li>
+          <li>Caso peor: se refiere a la situación inicial de los datos que genera una ejecución del
+            algoritmo con una complejidad computacional mayor.
+            </li>
+          <li>Caso promedio: la situación inicial de los datos no sigue ningún patrón
+            preestablecido que aporte ventajas o desventajas. Se puede considerar, por tanto, la
+            situación típica de ejecución del algoritmo.</li><br>
+        </ul>
+
+    </div>
+    
+   
+   <li id="titulo">Técnicas de Optimización</li>
+
+   <div id="p">
+    <p>Las técnicas de optimización en computación se centran en mejorar la eficiencia de
+      algoritmos y programas, tanto en términos de tiempo como de espacio.</p>
+     
+    <p id="preguntas">Estrategias para mejorar la eficiencia </p>
+  
+    <p id="preguntas">Análisis y Profiling</p>
+    <p>Perfilado (Profiling): Usar herramientas de perfilado para identificar cuellos de botella en
+      el rendimiento. Esto te permite centrarte en las partes del código que consumen más
+      tiempo o memoria.</p>
+  
+    <p>Optimización Basada en Datos: Basar las optimizaciones en datos empíricos.</p>
+    
+    <p id="preguntas">Optimización de Algoritmos
+    </p>
+  
+    <p>Elegir el Algoritmo Adecuado: Seleccionar algoritmos con mejor complejidad
+      computacional para el problema en cuestión. Por ejemplo, usar Quick Sort en lugar de
+      Bubble Sort para ordenación de grandes conjuntos de datos.</p>
+    <p>Algoritmos Aproximados: En algunos casos, un algoritmo exacto puede ser demasiado
+      costoso. Los algoritmos aproximados ofrecen soluciones cercanas a la óptima con menor
+      costo computacional.</p>
+  
+    <p id="preguntas">Optimización de Estructuras de Datos
+    </p>
+    <p>Elegir Estructuras de Datos Adecuadas: Utilizar estructuras de datos que proporcionen
+      las operaciones necesarias de manera eficiente. Por ejemplo, usar tablas hash para
+      búsquedas rápidas o árboles balanceados para operaciones de búsqueda y actualización
+      eficientes.</p>
+    <p>Optimización Espacial: Reducir el uso de memoria mediante técnicas como la
+      compresión de datos o el uso de estructuras de datos compactas.</p>
+  
+    <p id="preguntas">Optimización de Código</p>
+    <ul id="p">
+      <li>Eliminación de Código Redundante: Identificar y eliminar código que no contribuye a
+        la funcionalidad o que se ejecuta innecesariamente.</li>
+      <li>Optimización de Bucle: Mejorar la eficiencia de los bucles minimizando el trabajo
+        realizado en cada iteración y reduciendo la complejidad del número de iteraciones.
+        </li>
+      <li>En línea y Desplegado de Bucles: Usar técnicas de en línea para funciones pequeñas
+        y desplegar bucles para reducir el overhead de las llamadas a funciones y el control
+        de bucles.</li>
+    </ul>
+  
+    <p id="preguntas">Técnicas de poda (como poda alfa-beta en juegos)</p>
+  
+    <p>La poda alfa-beta es una técnica de optimización aplicada en algoritmos de búsqueda de
+      juegos, como el algoritmo Minimax, para reducir el número de nodos evaluados en el árbol
+      de búsqueda.</p>
+  
+    <p>Se utiliza en juegos de dos jugadores, como el ajedrez o el tres en raya, donde un jugador
+      intenta maximizar su puntuación (Max) y el otro jugador intenta minimizarla (Min).
+      </p>
+  
+    <p id="preguntas">Cómo Funciona:</p>
+  
+    <ul>
+      <li>Alfa: Es el valor máximo garantizado que el jugador MAX puede obtener en la ruta
+        actual del árbol de búsqueda. Representa la mejor puntuación que MAX puede
+        asegurarse si ambos jugadores juegan perfectamente.</li><br>
+      <li>Beta: Es el valor mínimo garantizado que el jugador MIN puede obtener en la ruta
+        actual del árbol de búsqueda. Representa la peor puntuación que MIN puede tolerar
+        si ambos jugadores juegan perfectamente.
+        </li><br>
+      <li>Poda: Durante la exploración del árbol, se podan (se omiten) ramas que no pueden
+        afectar la decisión final. Si el valor de un nodo es menor o igual a alfa en una rama de
+        MAX o mayor o igual a beta en una rama de MIN, entonces esa rama se descarta
+        porque no puede influir en la decisión final.</li><br>
+    </ul>
+
+   </div>
+   
+    </ol>
+</body>
+<footer class="footer">
+  <di>
+    <a href="index.html" class="btn">1</a>
+    <a href="pagina2.html" class="btn">2</a>
+    
+  </di>
+</footer>
+</html>
+</html>
